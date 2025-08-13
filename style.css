@@ -210,7 +210,7 @@ figcaption {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: #f9f7f1;
   border-radius: 10px;
 }
 
@@ -245,7 +245,7 @@ figcaption {
 }
 
 #contato button:hover {
-  background-color: #a30000;
+  background-color: #d14d42;
 }
 
 
@@ -423,4 +423,5 @@ figcaption {
     padding: 10px;
   }
     
+
 }
