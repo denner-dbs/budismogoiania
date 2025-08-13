@@ -1,0 +1,426 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f7f1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f7f1;
+}
+
+.header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      margin: 0 auto 40px auto; /* topo 0, horizontal auto, baixo 40px */
+      background-color: white
+    }
+
+#logo {
+  
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  width: 30%;
+  max-width: 200px; 
+  min-width: 140px;
+    
+}
+			
+.titulo{
+    
+  text-align: center;
+  width:100%;
+                    
+}
+
+.titulo h1{
+                
+  font-family:Bookman, URW Bookman L, serif;
+	font-size: 30px;
+	color: #190707;
+	font-weight: bold;
+}
+            
+.titulo h1 small{
+
+  font-size: 25px;
+  color: #8B0000;
+
+}
+
+.menu-quadrados {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 75%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-quadrados a {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 2px;
+  aspect-ratio: 1 / 1; /* deixa perfeitamente quadrado */
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 30px;
+}
+
+.menu-quadrados a:hover {
+  background-color: #d14d42;
+
+  transform: scale(1.05);
+}
+
+
+h2 {
+
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 80px; /* espaço acima do título */
+  margin-bottom: 40px; /* espaço abaixo do título */
+  
+}
+
+h3 {
+
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+
+}
+#intro h3{
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding-left:20px;
+  padding-right: 20px;
+}
+#intro p{
+  
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#foto {
+  
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  max-width: 700px;
+}
+
+figcaption {
+
+  text-align: center;
+  font-size: 13px;
+
+}
+
+.praticas {
+  display: flex;
+  justify-content: center;  /* centraliza o conjunto horizontalmente */
+  align-items: center;      /* centraliza verticalmente */
+  gap: 20px;
+  max-width: 500px;         /* limita largura total para não esticar demais */
+  margin: 20px auto;
+  flex-wrap: nowrap;        /* evita quebra de linha entre imagem e texto */
+  }
+
+.praticas img {
+  width: 30%;
+  height: auto;
+  display: block;
+  padding-left: 10px;
+}
+
+.praticas .texto {
+  flex-grow: 1; /* ocupa todo o espaço restante */
+  text-align: left;
+  padding-right: 10px;
+  line-height: 1; /* 1 = altura da própria fonte, sem espaço extra */
+}
+
+
+.praticas h3{
+  color: #8B0000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.praticas p{
+  margin: 0;
+  font-size: 120%;
+  text-align: left;
+  
+  
+
+}
+
+.mapa-container {
+  position: relative;
+  padding-bottom: 56.25%; /* proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 60%;
+  margin: 0 auto 80px; /* 20px de margem inferior */
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#OndeEstamos {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+#contato {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+  width: 94%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contato button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contato button:hover {
+  background-color: #a30000;
+}
+
+
+#oferecimento{
+  text-align: center;
+  color: #8B0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  clear:both;
+}
+
+#rodape {
+
+	font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: #8B0000 ;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 1;
+  box-sizing: border-box; /* garante que o padding não estoure a largura */  
+}
+
+#gonpas {
+
+  background-color: #F8F8FF;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#gonpas a:link {
+
+  color: #d14d42;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 5px;
+
+}
+
+#gonpas a:visited {
+  color: #d14d42;
+}
+
+#gonpas a:hover {
+
+  color: red;
+  background-color: white;
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .menu-quadrados {
+    font-size: 22px;
+    gap: 25px;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .menu-quadrados {
+    font-size: 20px;
+    gap: 20px;
+    max-width: 90%;
+  }
+  #gonpas {
+
+    display: block;
+    opacity : 1;
+        
+  }
+
+  .mapa-container { 
+  max-width: 75%;
+}
+}
+
+@media screen and (max-width: 570px) {
+  
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  
+
+  .titulo {
+        width: 55%;
+        text-align: left;
+      }
+
+      .titulo h1 {
+        font-size: 25px;
+      }
+
+      .titulo h1 small {
+        font-size: 20px;
+      }
+  
+  .menu-quadrados {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* uma coluna só */
+    gap: 5px;
+    max-width: 80%;
+  }
+  
+  .menu-quadrados a {
+    aspect-ratio: 1.4 / 1; /* retangular nos links */
+  }
+
+.mapa-container { 
+  max-width: 90%;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .titulo {
+          width: 55%;
+          text-align: left;
+        }
+
+        .titulo h1 {
+          font-size: 20px;
+        }
+
+        .titulo h1 small {
+          font-size: 15px;
+        }
+
+
+ .menu-quadrados {
+   
+  max-width: 80%;
+ }
+ 
+#logo {
+    width: 20%;
+  }
+
+  #local iframe {
+
+    height: 200px;
+
+  }
+
+  table {
+
+    font-size: 13px;
+
+  }
+
+  table caption {
+
+    font-size: 12px;
+
+  }
+
+  #rodape{
+    font-size: 14px;
+    padding: 10px;
+  }
+    
+}
